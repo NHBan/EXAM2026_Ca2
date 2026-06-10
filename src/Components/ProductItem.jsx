@@ -1,11 +1,11 @@
-function ProductItem() {
+function ProductItem({product,stt}) {
     return (<>
         <tr>
-            <td>1</td>
-            <td>Dien thoai Iphoen 15</td>
-            <td>Dien  thoai</td>
-            <td>24.990.000d</td>
-            <td className="bg-green ">Con hang</td>
+            <td>{stt}</td>
+            <td>{product.productName}</td>
+            <td>{product.category}</td>
+            <td>{product.price}</td>
+            <td className={product.status==="Còn hàng"?"bg-green":"bg-high"}>{product.status}</td>
         </tr>
     </>)
 }

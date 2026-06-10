@@ -1,4 +1,5 @@
-function ProductList()
+import ProductItem from "./ProductItem"
+function ProductList({productList})
 {
     return(
         <>
@@ -16,7 +17,15 @@ function ProductList()
                     <th>Trang thai</th>
                 </thead>
                 <tbody>
-                    
+                    {
+                        productList.map((product,index)=>
+                        <ProductItem 
+                        key={product.id}
+                        product={product}
+                        stt={index+1}
+                        />
+                        )
+                    }
                 </tbody>
             </table>
         </section>
