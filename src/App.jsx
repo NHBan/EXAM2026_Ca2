@@ -10,10 +10,15 @@ import Main from './Components/Main'
 function App() {
   const [count, setCount] = useState(0)
   const [productList,setProductList]=useState(dataList)
+  function handleAdd(newProduct)
+  {
+    const newList=[...productList,newProduct]
+    setProductList(newList)
+  }
   return (
     <>
       <Header/>
-      <Main productList={productList}/>
+      <Main productList={productList} onAdd={handleAdd}/>
     </>
   )
 }
