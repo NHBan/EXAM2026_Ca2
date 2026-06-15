@@ -1,5 +1,5 @@
-import ProductItem from "./ProductItem"
-function ProductList({productList})
+import ProductRow from "./ProductRow"
+function ProductTable({productList})
 {
     return(
         <>
@@ -19,7 +19,7 @@ function ProductList({productList})
                 <tbody>
                     {
                         productList.map((product,index)=>
-                        <ProductItem 
+                        <ProductRow
                         key={product.id}
                         product={product}
                         stt={index+1}
@@ -32,4 +32,4 @@ function ProductList({productList})
         </>
     )
 }
-export default ProductList
+export default ProductTable

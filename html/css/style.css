@@ -351,3 +351,20 @@ body {
   border-bottom: 1px solid #f1f5f9;
   color: #444;
 }
+/* custom status */
+/* Style chung cho nhãn status */
+.badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  display: inline-block; 
+  font-weight: 500;
+}
+
+/* Các màu trạng thái riêng */
+.status-con {
+  background-color: #00b8939d;
+}
+
+.status-het {
+  background-color: var(--danger); /* Đảm bảo bạn đã khai báo :root { --danger: #... } */
+}

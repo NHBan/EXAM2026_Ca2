@@ -1,12 +1,12 @@
 import ProductForm from "./ProductForm"
-import ProductList from "./ProductList"
+import ProductTable from "./ProductTable"
 function Main({productList,onAdd})
 {
 
     return(<>
         <main class=" container d-flex">
         <ProductForm onAdd={onAdd}/>
-        <ProductList productList={productList}/>
+        <ProductTable productList={productList}/>
 
         </main>
     </>)

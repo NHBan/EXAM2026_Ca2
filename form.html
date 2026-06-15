@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/App.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="container mb-2">
+        <div class=" d-flex flex-column bg-primary form-header">
+            <p class="text-title color-light">Quan ly danh sach san pham</p>
+            <p class="text-des color-light">Hien thi danh sach mot cach truc quan</p>
+        </div>
+    </header>
+    <main class=" container d-flex">
+        <section action="" class="d-flex flex-column gap-15 flex-1">
+            <div class="d-flex flex-column">
+                <p class="text-title ">Them san pham moi</p>
+                <p class="text-des ">Nhap day du thong tin nha</p>
+            </div>
+            <div class="d-flex flex-column gap-10">
+                <p class="label">Ten san pham</p>
+                <input type="text" placeholder="Nhap ten san pham" class="input">
+            </div>
+            <div class="d-flex flex-column gap-10">
+                <p class="label">Danh muc</p>
+                <select value="" class="input">
+                    <option value="May tinh bang" checked>--Chon danh muc--</option>
+                    <option value="May tinh bang">May tinh bang</option>
+                    <option value="May tinh bang">Dien thoai</option>
+                </select>
+            </div>
+            <div class="d-flex flex-column gap-10">
+                <p class="label">Gia</p>
+                <input type="number" placeholder="Nhap ten san pham" class="input">
+            </div>
+            <div class="d-flex flex-column gap-10">
+                <p class="label">Trang thai</p>
+                <select value="" class="input">
+                    <option value="May tinh bang">Het hang</option>
+                    <option value="May tinh bang">Con hang</option>
+                </select>
+            </div>
+            <div class="d-flex">
+                <div><button class="bg-primary color-light btn">Them san pham</button></div>
+                <div><button class=" bg-light btn">Lam moi form</button></div>
+            </div>
+        </section>
+        <section class="d-flex flex-column gap-15 flex-1">
+            <div class="d-flex flex-column">
+                <p class="text-title ">Danh sach cac san pham</p>
+                <p class="text-des ">Danh sach cac san pham hien thi tu he thong</p>
+            </div>
+            <table class="employee-table" >
+                <thead>
+                    <th>STT</th>
+                    <th>Ten san pham</th>
+                    <th>Danh muc</th>
+                    <th>Gia</th>
+                    <th>Trang thai</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Dien thoai Iphoen 15</td>
+                        <td>Dien  thoai</td>
+                        <td>24.990.000d</td>
+                        <td class="bg-green ">Con hang</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
